@@ -1,13 +1,23 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-import Navbar from './components/layout/Navbar.js'
+
+import Navbar from './components/layout/Navbar'
+import Index from './components/layout/Index'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-    </div>
+    <BrowserRouter>
+      <React.Fragment>
+        <Navbar/>
+        <div className="app-container">
+          <Switch>
+            <Route exact path ="/" component={Index} />
+          </Switch>
+        </div>
+      </React.Fragment>
+    </BrowserRouter>
   );
 }
 

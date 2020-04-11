@@ -1,0 +1,15 @@
+:root {
+  --color-main-accent: #4A0F76;
+  --color-main-background: #1A1A1A;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  background-color: var(--color-main-background);
+}
+
+.app-container {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
