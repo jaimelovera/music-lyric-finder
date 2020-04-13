@@ -17,7 +17,7 @@ class Tracks extends Component {
               <div className={styles.loader}>
                 <Loader
                 type="ThreeDots"
-                color="#FFF"
+                color={window.getComputedStyle(document.body).getPropertyValue('--color-main-font-color')}
                 height={100}
                 width={100}
                 />
