@@ -1,0 +1,23 @@
+@import '../../App.css';
+
+.heading {
+  color: var(--color-main-headings);
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem;
+  text-align: center;
+}
+
+.loader {
+  margin: 40px auto;
+  width: 100px;
+  display: block;
+}
+
+.tracksContainer {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+

@@ -10,5 +10,5 @@
 .navbarTitle {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25em;
-    color: #E7E7E7;
+    color: var(--color-main-headings);
 }

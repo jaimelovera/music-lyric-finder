@@ -1,0 +1,31 @@
+@import '../../App.css';
+
+.trackInfo {
+  color: var(--color-main-font-color);
+  border: 1px solid #5A5A5A;
+  border-radius: 4px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trackItemElem {
+  margin: 6px;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.trackButton {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.trackButton button {
+  
+  color: var(--color-main-font-color);
+  background-color: var(--color-main-accent);
+  cursor: pointer;
+  width: 90%;
+  padding: 5px;
+  margin-top: 5px;
+}
