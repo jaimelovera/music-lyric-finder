@@ -8,17 +8,17 @@ const Track = (prop) => {
   return (
     <div className={styles.trackInfo}>
       <div className={styles.trackItemElem}>
-        <i className="fas fa-user"></i> <strong>Artist:</strong>
+        <span className={styles.trackItemElemLabel}><i className="fas fa-user"></i> <strong>Artist:</strong></span>
         <br/>
         {track.artist_name}
       </div>
       <div className={styles.trackItemElem}>
-        <i className="fas fa-music"></i> <strong>Track:</strong>
+      <span className={styles.trackItemElemLabel}><i className="fas fa-music"></i> <strong>Track:</strong></span>
         <br/>
         {track.track_name}
       </div>
       <div className={styles.trackItemElem}>
-        <i className="fas fa-compact-disc"></i> <strong>Album:</strong>
+      <span className={styles.trackItemElemLabel}><i className="fas fa-compact-disc"></i> <strong>Album:</strong></span>
         <br/>
         {track.album_name}
       </div>
