@@ -27,26 +27,40 @@ class Lyrics extends Component {
     const { track, lyrics } = this.state
     if(track === undefined || lyrics === undefined || Object.keys(track).length === 0 || Object.keys(lyrics).length === 0) {
       return (
-        <Loader
-          type="ThreeDots"
-          color={window.getComputedStyle(document.body).getPropertyValue('--color-main-font-color')}
-          height={100}
-          width={100}
-        />
+        <div className={styles.loader}>
+          <Loader
+            type="ThreeDots"
+            color={window.getComputedStyle(document.body).getPropertyValue('--color-main-font-color')}
+            height={100}
+            width={100}
+          />
+        </div>
       )
     }
     else {
       return (
-        <div className={styles.lyricsContainer}>
-          <Link to="/">Go Back</Link>
-          {track.track_name}
-          {track.artist_name}
-          {lyrics.lyrics_body}
-          {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
+        <div className={styles.container}>
+            <Link to="/" style={{textDecoration: 'none'}}>
+              <button className={styles.backButton}><i className="fas fa-long-arrow-alt-left"></i> Go Back</button>
+            </Link>
+          <div className={styles.lyricsContainer}>
+            <ul className={styles.songInfo}>
+              <li>
+                <strong>{track.track_name}</strong> by {track.artist_name}
+              </li>
+              <li>
+              <i>Genre:</i> {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
+              </li>
+            </ul>
+            <ul className={styles.lyrics}>
+              <li>
+                {lyrics.lyrics_body}
+              </li>
+            </ul>
+          </div>
         </div>
       )
     }
- 
   }
 }
 

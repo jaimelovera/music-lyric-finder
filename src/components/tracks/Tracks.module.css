@@ -1,8 +1,7 @@
 @import '../../App.css';
 
 .heading {
-  color: var(--color-main-headings);
-  font-family: 'Poppins', sans-serif;
+  color: var(--color-main-headings-color);
   margin: 2rem;
   text-align: center;
 }
@@ -14,7 +13,6 @@
 }
 
 .tracksContainer {
-  font-family: 'Poppins', sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;

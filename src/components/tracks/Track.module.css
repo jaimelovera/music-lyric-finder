@@ -16,7 +16,7 @@
 }
 
 .trackItemElemLabel {
-  color: var(--color-main-headings);
+  color: var(--color-main-headings-color);
   font-size: 1.15em;
   font-style: italic;
 }
@@ -28,7 +28,7 @@
 
 .trackButton button {
   color: var(--color-main-font-color);
-  background-color: var(--color-main-accent);
+  background-color: var(--color-main-accent-color);
   cursor: pointer;
   font-size: 0.9em;
   width: 100%;

@@ -1,7 +1,7 @@
 @import '../../App.css';
 
 .navbar{
-    background-color: var(--color-main-accent);
+    background-color: var(--color-main-accent-color);
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -10,5 +10,5 @@
 .navbarTitle {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25em;
-    color: var(--color-main-headings);
+    color: var(--color-main-headings-color);
 }

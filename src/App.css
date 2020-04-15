@@ -1,14 +1,15 @@
 :root {
-  --color-main-accent: #4A0F76;
-  --color-main-background: #1A1A1A;
-  --color-main-headings: #E7E7E7;
+  --color-main-accent-color: #4A0F76;
+  --color-main-background-color: #1A1A1A;
+  --color-main-headings-color: #E7E7E7;
   --color-main-font-color: #BABABA;
 }
 
 body {
   margin: 0;
   font-size: 14px;
-  background-color: var(--color-main-background);
+  background-color: var(--color-main-background-color);
+  font-family: 'Poppins', sans-serif;
 }
 
 .app-container {
