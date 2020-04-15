@@ -12,7 +12,7 @@ import styles from './Search.module.css'
     this.setState({[e.target.name]: e.target.value})
   }
 
-  findTrack = (dispatch, track_list, e) => {
+  findTrack = (dispatch, track_list, heading, e) => {
     e.preventDefault()
 
     dispatch({
@@ -28,7 +28,7 @@ import styles from './Search.module.css'
         dispatch({
           type: 'CHANGE_TRACKS',
           payload: res.data.message.body.track_list,
-          heading: 'Search Results'
+          heading: `Search Results for : "${this.state.trackTitle}"`
         })
         this.setState({trackTitle: ''})
       }
@@ -36,7 +36,7 @@ import styles from './Search.module.css'
         dispatch({
           type: 'CHANGE_TRACKS',
           payload: track_list,
-          heading: 'Top 10 Tracks'
+          heading: heading
         })
         alert("No results! Try again with a different song name.")
         this.setState({trackTitle: ''})
@@ -49,13 +49,13 @@ import styles from './Search.module.css'
     return (
       <Consumer>
         {value => {
-          const { dispatch, track_list } = value
+          const { dispatch, track_list, heading } = value
           return (
             <div className={styles.searchContainer}>
               <h1><i className="fas fa-music"></i> Search For A Song</h1>
-              <p><i>Get the lyrics for any song</i></p>
+              <p><i>Get the lyrics for any song</i> <i className="fas fa-search"></i> </p>
               <form 
-                onSubmit={this.findTrack.bind(this, dispatch, track_list)}
+                onSubmit={this.findTrack.bind(this, dispatch, track_list, heading)}
                 className={styles.searchForm}
                 autoComplete="off"
               >

@@ -41,11 +41,11 @@ class Lyrics extends Component {
       return (
         <div className={styles.container}>
             <Link to="/" style={{textDecoration: 'none'}}>
-              <button className={styles.backButton}><i className="fas fa-long-arrow-alt-left"></i> Go Back</button>
+              <button className={styles.backButton}><i className="fas fa-arrow-left"></i> Go Back</button>
             </Link>
           <div className={styles.lyricsContainer}>
             <div className={styles.songInfo}>
-              <strong>{track.track_name}</strong> by {track.artist_name}
+              <strong><i className="fas fa-music"></i> {track.track_name}</strong> <i className="fas fa-minus"></i> by {track.artist_name}
             </div>
             <div className={styles.lyrics}>
               {lyrics.lyrics_body}
