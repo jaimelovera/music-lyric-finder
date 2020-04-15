@@ -44,19 +44,12 @@ class Lyrics extends Component {
               <button className={styles.backButton}><i className="fas fa-long-arrow-alt-left"></i> Go Back</button>
             </Link>
           <div className={styles.lyricsContainer}>
-            <ul className={styles.songInfo}>
-              <li>
-                <strong>{track.track_name}</strong> by {track.artist_name}
-              </li>
-              <li>
-              <i>Genre:</i> {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
-              </li>
-            </ul>
-            <ul className={styles.lyrics}>
-              <li>
-                {lyrics.lyrics_body}
-              </li>
-            </ul>
+            <div className={styles.songInfo}>
+              <strong>{track.track_name}</strong> by {track.artist_name}
+            </div>
+            <div className={styles.lyrics}>
+              {lyrics.lyrics_body}
+            </div>
           </div>
         </div>
       )

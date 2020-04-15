@@ -21,12 +21,6 @@
   border-radius: 5px;
 }
 
-.lyricsContainer ul {
-  list-style-type:none;
-  margin: 0;
-  padding: 0;
-}
-
 .lyricsContainer .songInfo {
   padding: 1.5rem 2rem;
   border: 1px solid rgb(154, 154, 154, 0.5);
@@ -35,11 +29,7 @@
   text-align: center;
 }
 
-.lyricsContainer .songInfo li {
-  padding: 0.5rem 0;
-}
-
-.lyricsContainer .songInfo li strong{
+.lyricsContainer .songInfo strong{
   font-size: 1.4em;
 }
 
@@ -49,5 +39,4 @@
   border-radius: 0 0 15px 15px;
   font-size: 1.2em;
   line-height: 1.75;
-
 }
