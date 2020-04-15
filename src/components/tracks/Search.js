@@ -12,25 +12,34 @@ import styles from './Search.module.css'
     this.setState({[e.target.name]: e.target.value})
   }
 
-  findTrack = (dispatch, e) => {
+  findTrack = (dispatch, track_list, e) => {
     e.preventDefault()
 
     dispatch({
-      type: 'SEARCH_TRACKS',
-      payload: []
+      type: 'CHANGE_TRACKS',
+      payload: [],
+      heading: ''
     })
 
-    axios.get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`)
+    axios.get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&f_has_lyrics=1&f_lyrics_language=en&apikey=${process.env.REACT_APP_MM_KEY}`)
     .then(res => {
+      console.log(res.data)
       if(res.data.message.header.available !== 0) {
         dispatch({
-          type: 'SEARCH_TRACKS',
-          payload: res.data.message.body.track_list
+          type: 'CHANGE_TRACKS',
+          payload: res.data.message.body.track_list,
+          heading: 'Search Results'
         })
         this.setState({trackTitle: ''})
       }
       else {
+        dispatch({
+          type: 'CHANGE_TRACKS',
+          payload: track_list,
+          heading: 'Top 10 Tracks'
+        })
         alert("No results! Try again with a different song name.")
+        this.setState({trackTitle: ''})
       }
     })
     .catch(err => console.log(err))
@@ -40,13 +49,13 @@ import styles from './Search.module.css'
     return (
       <Consumer>
         {value => {
-          const { dispatch } = value
+          const { dispatch, track_list } = value
           return (
             <div className={styles.searchContainer}>
-              <h1>Search For A Song</h1>
+              <h1><i className="fas fa-music"></i> Search For A Song</h1>
               <p><i>Get the lyrics for any song</i></p>
               <form 
-                onSubmit={this.findTrack.bind(this, dispatch)}
+                onSubmit={this.findTrack.bind(this, dispatch, track_list)}
                 className={styles.searchForm}
                 autoComplete="off"
               >

@@ -5,11 +5,11 @@ const Context = React.createContext()
 
 const reducer = (state, action) => {
   switch(action.type){
-    case 'SEARCH_TRACKS':
+    case 'CHANGE_TRACKS':
       return {
         ...state,
         track_list: action.payload,
-        heading: 'Search Results'
+        heading: action.heading
       }
     default:
       return state
