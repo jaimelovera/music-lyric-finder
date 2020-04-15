@@ -1,6 +1,7 @@
 .container {
   color: var(--color-main-font-color);
-  margin: 4rem 10rem;
+  margin: 2rem 10rem;
+  margin-bottom: 8rem;
 }
 
 .loader {
