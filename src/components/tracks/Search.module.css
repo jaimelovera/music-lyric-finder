@@ -1,0 +1,43 @@
+@import '../../App.css';
+
+.searchContainer {
+  display: grid;
+  text-align: center;
+  color: var(--color-main-font-color);
+  border: 1px solid #5A5A5A;
+  border-radius: 4px;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.searchContainer h1 {
+  margin: 0;
+}
+
+.searchForm {
+  display: grid;
+}
+
+.searchInput {
+  cursor: pointer;
+  color: var(--color-main-font-color);
+  background-color: var(--color-main-background-color);
+  border: 0;
+  border-bottom: 1px solid var(--color-main-font-color);
+  padding: 0.25rem;
+  margin: 0 4rem;
+  font-size: 1.25em;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchButton {
+  cursor: pointer;
+  margin: 0.5rem 4rem;
+  padding: 0.35rem;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+}

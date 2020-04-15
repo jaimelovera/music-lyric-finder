@@ -13,6 +13,11 @@ body {
 }
 
 .app-container {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin: 0rem 14rem;
+}
+
+@media (max-width: 1200px) {
+  .app-container {
+    margin: 0rem 4rem;
+  }
 }
