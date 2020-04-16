@@ -4,12 +4,10 @@ import Search from '../tracks/Search'
 
 const Index = () => {
   return(
-    <div>
-      <React.Fragment>
-        <Search />
-        <Tracks />
-      </React.Fragment>
-    </div>
+    <React.Fragment>
+      <Search />
+      <Tracks />
+    </React.Fragment>
   )
 }
 

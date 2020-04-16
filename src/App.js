@@ -14,7 +14,6 @@ function App() {
   return (
     <Provider>
     <BrowserRouter>
-      <React.Fragment>
         <Navbar/>
         <div className="app-container">
           <Switch>
@@ -22,7 +21,6 @@ function App() {
             <Route exact path="/lyrics/track/:id" component={Lyrics} />
           </Switch>
         </div>
-      </React.Fragment>
     </BrowserRouter>
     </Provider>
   );
