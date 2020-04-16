@@ -53,7 +53,7 @@ import styles from './Search.module.css'
           return (
             <div className={styles.searchContainer}>
               <h1><i className="fas fa-music"></i> Search For A Song</h1>
-              <p><i>Get the lyrics for any song</i> <i className="fas fa-search"></i> </p>
+              <p><i className="fas fa-search"></i> <i> Get the lyrics for any song</i></p>
               <form 
                 onSubmit={this.findTrack.bind(this, dispatch, track_list, heading)}
                 className={styles.searchForm}
