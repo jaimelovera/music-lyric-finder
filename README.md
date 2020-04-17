@@ -25,7 +25,7 @@ npm run build
 ```
 
 ## Motivation
-I built this small application to practice using react router to build a single page application, axios for making HTTP requests to talk with an API, and how to use reacts Context API to manage global state. I learned how to use CSS modules in react to scope my css classes locally to each component (SUPER awesome). I also learned about Cross-Origin Resource Sharing (CORS) and why all modern browsers implement it ... and how to get around it using a proxy server which was sufficient for my needs since this is only a small project with no user authentication and security is not a top priority.
+I built this small application to practice using react router to build a single page application, axios for making HTTP requests to talk with an API, and how to use reacts Context API to manage global state. I learned how to use CSS modules in react to scope my css classes locally to each component (SUPER awesome). I learned about Cross-Origin Resource Sharing (CORS) and why all modern browsers implement it ... and how to get around it using a proxy server which was sufficient for my needs since this is only a small project with no user authentication and security is not a top priority. I also realized that if I shared a link to a specific track, the link led to a 404 because the browser tries to find a file that does not exist. This is happening because I am doing client side routing with Router, therefore I had to redirect all links to the index file.
 
 ## App Info
 
