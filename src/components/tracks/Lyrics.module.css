@@ -1,5 +1,5 @@
 .container {
-  color: var(--color-main-font-color);
+  color: var(--color-main-headings-color);
   margin: 2rem 2rem;
   margin-bottom: 8rem;
 }
@@ -34,7 +34,7 @@
   text-align: center;
 }
 
-.lyricsContainer .songInfo strong{
+.lyricsContainer .songInfo strong {
   font-size: 1.4em;
 }
 
