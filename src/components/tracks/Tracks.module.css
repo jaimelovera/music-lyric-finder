@@ -1,4 +1,4 @@
-@import '../../App.css';
+@import "../../App.css";
 
 .heading {
   color: var(--color-main-headings-color);
@@ -19,7 +19,6 @@
   grid-row-gap: 1rem;
   padding-bottom: 8rem;
 }
-
 
 @media (max-width: 768px) {
   .tracksContainer {

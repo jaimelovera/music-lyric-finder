@@ -13,11 +13,7 @@ body {
 }
 
 .app-container {
-  margin: 0rem 14rem;
-}
-
-@media (max-width: 1200px) {
-  .app-container {
-    margin: 0 1rem;
-  }
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
 }
