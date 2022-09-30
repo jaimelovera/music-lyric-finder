@@ -2,17 +2,9 @@
 
 > A react web application for searching music lyrics using Reacts built in context API along with the Musixmatch public API. Please note that the free version of the API only returns partial lyrics.
 
-## Visit My Hosted Demo
-
-https://music-lyric-finder.netlify.app/
-
-The free API I am using has a limited amount of requests per day, so if no data loads please try again another day!
-
 ## Musixmatch API
 
 Get your API key [here](https://developer.musixmatch.com) and add it to the .ENV file.
-
-> Or use mine since I left it in there :P
 
 ## Quick Start
 
@@ -45,4 +37,4 @@ I ran into some unexpected hurdles of using React Router. If I share a link with
 
 ## App Info
 
-#### Author: [Jaime Lovera](https://www.jaimelovera.com/)
+#### Author: [Jaime Lovera](https://github.com/jaimelovera)
