@@ -1,5 +1,7 @@
 # Song Lyric Search App Using React
 
+###### Note: I no longer have an active API key so the site is not being hosted.
+
 > A react web application for searching music lyrics using Reacts built in context API along with the Musixmatch public API. Please note that the free version of the API only returns partial lyrics.
 
 ## Musixmatch API
